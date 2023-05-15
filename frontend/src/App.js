@@ -52,8 +52,7 @@ function App() {
         if(isFirstRun.current !== true) {
             let mounted = true;
             if (offset === 0 || (offset > 0 && limit > 0)) {
-                console.log("axios");
-                axios.get(`http://localhost:5098/api/post/?limit=${limit}&offset=${offset}`)
+                    axios.get(`http://localhost:5098/api/post/?limit=${limit}&offset=${offset}`)
                     .then((resp) => {
                         if (mounted) {
                             setPosts(resp.data);

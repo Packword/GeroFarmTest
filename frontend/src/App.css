@@ -6,11 +6,12 @@ body {
 .header {
   width: 100%;
   height: 50px;
-  background-color: lightgreen;
 }
 .App {
   display: grid;
   grid-template-rows: 50px 1fr 100px;
+  background: #3f5efb;
+  background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
 }
 .content {
   width: 100%;
@@ -34,15 +35,12 @@ body {
 }
 .content .left-bar {
   width: 250px;
-  background-color: mediumvioletred;
 }
 .content .right-bar {
   width: 200px;
-  background-color: cornflowerblue;
 }
 .footer {
   width: 100%;
   height: 100px;
-  background-color: yellow;
 }
 /*# sourceMappingURL=App.css.map */

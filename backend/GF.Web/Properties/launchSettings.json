@@ -2,11 +2,7 @@
   "$schema": "https://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
-    "anonymousAuthentication": true,
-    "iisExpress": {
-      "applicationUrl": "http://localhost:22274",
-      "sslPort": 0
-    }
+    "anonymousAuthentication": true
   },
   "profiles": {
     "GF.Web": {
@@ -17,18 +13,6 @@
       },
       "applicationUrl": "http://localhost:5098",
       "dotnetRunMessages": true
-    },
-    "IIS Express": {
-      "commandName": "IISExpress",
-      "launchBrowser": false,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    },
-    "Docker": {
-      "commandName": "Docker",
-      "launchBrowser": false,
-      "publishAllPorts": true
     }
   }
 }
