@@ -27,8 +27,8 @@ namespace GF.Services
                 _db.Posts.RemoveRange(posts);
                 _db.SaveChanges();
             }
-            for (int i = 0; i < 50; i++)
-                _db.Posts.Add(new Post { Title = $"{i}" });
+            for (int i = 0; i < 100; i++)
+                _db.Posts.Add(new Post { Title = $"Post{i}" });
             _db.SaveChanges();
         }
     }

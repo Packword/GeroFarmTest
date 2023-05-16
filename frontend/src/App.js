@@ -65,13 +65,22 @@ function App() {
     }, [limit, offset])
 
     function renderGrid(){
+        function getTitle(row, column){
+            if(posts[row * columnCount + column] !== undefined) {
+                return posts[row * columnCount + column].title;
+            }
+            else{
+                return "Nothing";
+            }
+        }
         function renderRow(row){
             const cards = [];
-            if(posts.length === columnCount * rowCount) {
                 for (let column = 0; column < columnCount; column++) {
-                    cards.push(<Card content={posts[row * columnCount + column].title}/>)
+                    cards.push(
+                        <Card
+                            content={getTitle(row, column)}
+                        />)
                 }
-            }
             return (<div className="row">{cards}</div>)
         }
         function renderTable(){
