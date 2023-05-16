@@ -43,7 +43,7 @@ function App() {
 
     useEffect(() => {
         const curLimit = rowCount * columnCount;
-        if(curLimit !== limit) {
+        if(curLimit > limit) {
             setLimit(curLimit);
         }
     }, [columnCount, rowCount])
